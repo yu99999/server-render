@@ -561,4 +561,3 @@ const App = (props) => {
 
 export default WithStyle(App, styles);	// 传入组件以及样式发，返回一个全新的组件
 ```
-
