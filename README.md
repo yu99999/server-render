@@ -1,13 +1,3 @@
----
-title: 07 服务端渲染
-date: 2021-4-6
-categories:
- - 前端性能
-tags:
- - 前端性能
----
-
-
 
 ## 什么是服务端渲染
 
@@ -17,17 +7,17 @@ tags:
 
 我们编写的 Vue、React 应用一般都是 CSR，当我们打开网页源代码后呈现的 html 都是下面这种样子，由一个根容器加上核心 js 代码简单组成。
 
-![image-20210613014315046](F:\Study_Document\笔记\image\image-20210613014315046.png)
+![image-20210613014315046](\public\image\image-20210613014315046.png)
 
 当请求完 html 页面后会去加载核心 js 代码文件，当 js 加载完成后页面才会展现出来，否则页面会一直处于白屏
 
-<img src="F:\Study_Document\笔记\image\image-20210613021618543.png" alt="image-20210613021618543" style="zoom:80%;" />
+<img src="\public\image\image-20210613021618543.png" alt="image-20210613021618543" style="zoom:80%;" />
 
 ### 服务端渲染 SSR
 
 简单来说就是由服务器生成 html 字符串后，再发送到浏览器，此时浏览器拿到的是能够完全显示的 html 页面。打开网页源代码后是多姿多彩的 html。一般我们会利用到 node 服务器来作为数据传输的中间层
 
-<img src="F:\Study_Document\笔记\image\6522842-ee4752e9500e9976.png" alt="6522842-ee4752e9500e9976" style="zoom:67%;" />
+<img src="\public\image\6522842-ee4752e9500e9976.png" alt="6522842-ee4752e9500e9976" style="zoom:67%;" />
 
 ### 服务端渲染的利与弊
 
